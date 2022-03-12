@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Responsive Multipage Education Website Using HTML, CSS & JavaSCript</title>
+	<title>Responsive  Education Website Using HTML, CSS & JavaSCript</title>
 
 	<!-- ICONSCOUT CDN -->
 	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
@@ -16,9 +16,8 @@
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
 		rel="stylesheet">
 
-
-	<!-- SWIPER JS -->
-	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+   <!-- SWIPER JS -->
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
 
 	<link rel="stylesheet" href="./css/style.css">
@@ -425,6 +424,26 @@
         </div>
       </footer>
 	<script type="text/javascript" src="js/main.js"></script>
+
+	<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+	<script>
+		// slides for testimonials section
+		var swiper = new Swiper(".mySwiper", {
+		  slidesPerView: 1,
+		  spaceBetween: 30,
+		  pagination: {
+		  el: ".swiper-pagination",
+		  clickable: true,
+		  },
+		  // when window width is >= 600px
+		  breakpoints: {
+			  600: {
+				  slidesPerView: 2
+			  }
+		  }
+	  });
+	</script>
 </body>
 
 </html>
